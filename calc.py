@@ -16,21 +16,21 @@ money_saved = (int(budget) - int(essential_spendings)) * 12
 
 def vacation_stress_status(number):
     if number <= str("6") :
-        return "You may not need a vacation."
+        return ("You may not need a vacation." + "\n" + "\n" + "However, if you want one there is some information about your financial status:")
     elif number > str("6"): 
-        return "You definetly need a vacation!"
+        return ("You definetly need a vacation!" "\n" + "\n" + "There is some information about your financial status:")
 
-print(vacation_stress_status(stress_level))
+print("\n" + vacation_stress_status(stress_level))
 
-print(f"For the past year you saved ${money_saved}!")
+print(f"\nFor the past year you saved ${money_saved}!")
 
 def enough_money_for_vacation(money):
     if int(money_saved) >= int(vacation_expenses):
-        return (f"You vacation cost ${vacation_expenses} so you can afford it")
+        return (f"Your vacation cost ${vacation_expenses}, so you can afford it.")
     if int(money_saved) < int(vacation_expenses):
-        return (f"You vacation cost ${vacation_expenses} so you can't afford it. Please save more money and try to go on a vacation next year.")
+        return (f"Your vacation cost ${vacation_expenses}, so you can't afford it. Please save more money and try to go on a vacation next year.")
 
-print (enough_money_for_vacation(vacation_expenses))
+print ("\n" + enough_money_for_vacation(vacation_expenses) + "\n")
 
 
     
