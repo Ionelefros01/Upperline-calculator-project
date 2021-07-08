@@ -26,7 +26,7 @@ print(f"\nFor the past year you saved ${money_saved}!")
 
 def enough_money_for_vacation(money):
     if int(money_saved) >= int(vacation_expenses):
-        return (f"Your vacation cost ${vacation_expenses}, so you can afford it.")
+        return (f"Your vacation cost ${vacation_expenses}, so you can afford it. Have a great vacation!")
     if int(money_saved) < int(vacation_expenses):
         return (f"Your vacation cost ${vacation_expenses}, so you can't afford it. Please save more money and try to go on a vacation next year.")
 
