@@ -4,7 +4,6 @@
 
 budget = input("What is your net monthly salary? ")
 essential_spendings = input("How much money do you spend on living expenses? ")
-# save_account = input("How much money do you want to send to the saving account? ")
 vacation_expenses = input("How much money does your vacation requires? ")
 stress_level = input("On a scale of 1 to 10 how stressfull you felt this year? ") 
 
