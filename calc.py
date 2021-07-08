@@ -27,6 +27,8 @@ def vacation_stress_status(number):
     elif number > str("6"): 
         return ("You definetly need a vacation!" "\n" + "\n" + "There is some information about your financial status:")
 
+print("------------------------------------------------" + "\n")
+
 print("\n" + vacation_stress_status(stress_level))
 
 print(f"\nFor the past year you saved ${money_saved}!")
